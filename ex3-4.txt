@@ -1,0 +1,21 @@
+3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
+из этого репозитория
+
+root@vn:/home/host-vn# dpkg -i /home/host-vn/Downloads/mysql-apt-config_0.8.26-1_all.deb
+root@vn:/home/host-vn# apt update
+root@vn:/home/host-vn# apt install mysql-server
+
+
+4. Установить и удалить deb-пакет с помощью dpkg.
+5. Выложить историю команд в терминале ubuntu
+
+root@vn:/home/host-vn/dev_spec_Exam# wget https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+root@vn:/home/host-vn/dev_spec_Exam# dpkg -i virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+root@vn:/home/host-vn/dev_spec_Exam# apt -f install
+
+root@vn:/home/host-vn/dev_spec_Exam# apt purge virtualbox-7.0
+root@vn:/home/host-vn/dev_spec_Exam# apt purge libdouble-conversion3 libmd4c0 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5help5 libqt5network5
+bqt5opengl5 libqt5printsupport5 libqt5sql5 libqt5sql5-sqlite libqt5svg5 libqt5widgets5 libqt5x11extras5
+root@vn:/home/host-vn/dev_spec_Exam# apt autoremove
+root@vn:/home/host-vn/dev_spec_Exam# rm virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+
